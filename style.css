@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #fffefe;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 170px;
+    padding-left: 30px;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+}
+
+li {
+    text-decoration: none;
+}
+
+li:hover{
+    opacity: .8;
+}
+
+.ul-nav {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding-right: 50px;
+    margin: 0;
+}
+
+.ul-nav a {
+    text-decoration: none;
+    color: #F03A3F;
+}
+
+main {
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(154, 100, 100);
+    display: flex;
+    gap: 20px;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+
+.card {
+    background-color: #fffefe;
+    height: max-content;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+
+.img-card {
+    border-radius: 20px;
+    width: 330px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.img-card:hover{
+    opacity: .9;
+}
+
+.card-body {
+    border-radius: 0px 0px 20px 20px;
+    background-color: #e3b7b9;
+    padding: 10px;
+}
+
+.button-card {
+    color: white;
+    border-style: none;
+    background-color: #F03A3F;
+    padding: 15px 50px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+.button-card:hover {
+   opacity: .8;
+}
+
+footer {
+    background-color: #fffefe;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    flex-direction: row;
+}
+
+.redes {
+    justify-content: center;
+    display: flex;
+    margin-right: 4%;
+    gap: 15px;
+    align-items: center;
+}
+
+.icons {
+    height: 30px;
+    width: 30px;
+}
+
+img {
+    height: 100%;
+}
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .ul-nav {
+        flex-direction: column;
+        gap: 2px;
+        text-align: center;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: max-content;
+    }
+}

@@ -5,38 +5,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+
     <title>The store</title>
 </head>
 
 <body>
     <header>
-        <img src="img/logo.png" alt="logo-theStore">
+        <a href="index.html"><img src="img/logo.png" alt="logo-theStore" class="logo" width="170px"></a>
+        <nav>
+            <ul class="ul-nav">
+                <li><a href="index.html">Product</a></li>
+                <li><a href="#">Car</li>
+                <li><a href="#">Login</a></li>
+                <li><a href="newProduct.html">New Product</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Product</a></li>
-            <li><a href="#">Car</li>
-            <li><a href="#">Login</a></li>
-            <li><a href="newProduct.html">New Product</a></li>
-        </ul>
-    </nav>
 
     <main>
         <div class="card">
-            <img src="img/cicla-bmx.jfif" alt="" style=" width: 200px; height: 200px;">
-            <h2>Bicicleta 4x4</h2>
-            <p>$ 500.000</p>
-            <button>Add Card</button>
+            <img src="img/bicicleta.webp" alt="" class="img-card">
+            <div class="card-body">
+                <h2>Bicicleta</h2>
+                <p>$ 500.000</p>
+                <button class="button-card">Add Card</button>
+            </div>
         </div>
 
         <div class="card">
-            <img src="img/Gafas.webp" alt="" style=" width: 200px; height: 200px;">
-            <h2>Gafas</h2>
-            <p>$ 100.000</p>
-            <button>Add Card</button>
+            <img src="img/Gafas.webp" alt="" class="img-card">
+            <div class="card-body">
+                <h2>Gafas de sol</h2>
+                <p>$ 100.000</p>
+                <button class="button-card">Add Card</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/portatil.webp" alt="" class="img-card">
+            <div class="card-body">
+                <h2>Portatil HP</h2>
+                <p>$ 2.500.000</p>
+                <button class="button-card">Add Card</button>
+            </div>
+        </div>
+
+        <div class="card"> 
+            <img src="img/Diadema.webp" alt="" class="img-card">
+            <div class="card-body">
+                <h2>Audífonos Sony</h2>
+                <p>$ 1.500.000</p>
+                <button class="button-card">Add Card</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/zapatos-adidas.webp" alt="" class="img-card">
+            <div class="card-body">
+                <h2>Tenis adidas</h2>
+                <p>$ 250.000</p>
+                <button class="button-card">Add Card</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/tv-lg.webp" alt="" class="img-card">
+            <div class="card-body">
+                <h2>Tv LG</h2>
+                <p>$ 900.000</p>
+                <button class="button-card">Add Card</button>
+            </div>
         </div>
     </main>
+
+    <footer>
+
+        <p>Desarrollado por Juan Sebastian Rojas Sanchez</p>
+
+        <div class="redes">
+
+            <a href="https://www.linkedin.com/in/sebastian-rojas-2ba603245" class="icons"> <img src="logos/linkedin.png"
+                    alt="linkedin"></a>
+
+            <a href="https://github.com/sebastianXV" class="icons"> <img src="logos/github.webp" alt="github"></a>
+
+        </div>
+
+    </footer>
 </body>
 
 </html>
