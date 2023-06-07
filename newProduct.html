@@ -5,45 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product.css">
     <title>New Product</title>
 </head>
 
 <body>
     <header>
-        <img src="img/logo.png" alt="logo-theStore">
+        <a href="index.html"><img src="img/logo.png" alt="logo-theStore" class="logo" width="170px"></a>
+        <nav>
+            <ul class="ul-nav">
+                <li><a href="index.html">Product</a></li>
+                <li><a href="#">Car</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="newProduct.html">New Product</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Product</a></li>
-            <li><a href="#">Car</li>
-            <li><a href="#">Login</a></li>
-            <li><a href="newProduct.html">New Product</a></li>
-        </ul>
-    </nav>
 
     <main>
 
-        <section>
-            <img src="img/logo.png" alt="logo-theStore">
+        <div class="card">
+            <h1 class="card-title">New Product</h1>
+                <fieldset class="card-content">
+                    <label>Name:</label>
+                    <input type="text" class="card-input">
 
-            <fieldset style=" border: none; border-radius: 20px; background-color:#888888;">
-                <label>Name</label>
-                <input type="text">
+                    <label>Price:</label>
+                    <input type="number" class="card-input">
 
-                <label>Price</label>
-                <input type="number">
+                    <label>Inventory:</label>
+                    <input type="number" class="card-input">
 
-                <label>Inventory</label>
-                <input type="number">
-
-                <button>Create Product</button>
-            </fieldset>
-        </section>
-
-
-
+                    <button class="button-card">Create Product</button>
+                </fieldset>
+        </div>
+        
     </main>
+
+    <footer>
+
+        <p>Desarrollado por Juan Sebastian Rojas Sanchez</p>
+
+        <div class="redes">
+
+            <a href="https://www.linkedin.com/in/sebastian-rojas-2ba603245" class="icons"> <img src="logos/linkedin.png"
+                    alt="linkedin"></a>
+
+            <a href="https://github.com/sebastianXV" class="icons"> <img src="logos/github.webp" alt="github"></a>
+
+        </div>
+
+    </footer>
 
 </body>
 
