@@ -79,6 +79,8 @@ main {
 }
 
 .card-input{
+    border-style: none;
+    border: 1px solid #bdbebe;
     border-radius: 5px;
     height: 40px;
 }

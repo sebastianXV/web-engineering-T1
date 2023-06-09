@@ -26,19 +26,26 @@
 
         <div class="card">
             <h1 class="card-title">New Product</h1>
+            <form onsubmit="validateForm(event)">
                 <fieldset class="card-content">
                     <label>Name:</label>
-                    <input type="text" class="card-input">
-
+                    <input type="text" name="name" class="card-input">
+                    <div id="name-error" class="error-message"></div>
+        
                     <label>Price:</label>
-                    <input type="number" class="card-input">
-
+                    <input type="number" name="price" class="card-input">
+                    <div id="price-error" class="error-message"></div>
+        
                     <label>Inventory:</label>
-                    <input type="number" class="card-input">
-
-                    <button class="button-card">Create Product</button>
+                    <input type="number" name="inventory" class="card-input">
+        
+                    <button type="submit" class="button-card">Create Product</button>
+        
+                    <div id="success-message" class="success-message"></div>
                 </fieldset>
+            </form>
         </div>
+        
         
     </main>
 
@@ -56,6 +63,8 @@
         </div>
 
     </footer>
+
+    <script src="app.js"></script>
 
 </body>
 
